@@ -1,0 +1,19 @@
+<h2>Lista de Pessoas</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+
+    {% for p in dados %}
+    <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
+        <td>{{ p[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">Voltar</a>
